@@ -12,6 +12,7 @@ import {
   DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import { QUOTES, CATEGORIES, getDailyQuote, type Category } from "@/lib/quotes";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -132,7 +133,7 @@ function Index() {
             </div>
             <div className="min-w-0">
               <p className="truncate text-xs font-medium uppercase tracking-widest text-muted-foreground">Daily Motivation</p>
-              <h1 className="truncate font-display text-lg font-bold text-foreground sm:text-xl">Start your day with positivity.</h1>
+              <p className="truncate text-sm font-medium text-foreground/70">Fresh quote, every day</p>
             </div>
           </div>
           <div className="flex shrink-0 items-center gap-2">
@@ -151,6 +152,21 @@ function Index() {
             </Button>
           </div>
         </header>
+
+        {/* Hero */}
+        <section className="mt-10 text-center sm:mt-14">
+          <span className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
+            <Star className="h-3.5 w-3.5 fill-current" /> Start your day with positivity
+          </span>
+          <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-6xl md:text-7xl">
+            One quote. <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">Every day.</span>
+            <br className="hidden sm:block" /> A better mindset.
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg">
+            Handpicked motivational wisdom across love, success, life, study & fitness — search,
+            save your favorites, and share the ones that move you.
+          </p>
+        </section>
 
         {/* Search */}
         <div className="mt-6 flex items-center gap-2 rounded-2xl glass px-4 py-2">
@@ -281,10 +297,8 @@ function Index() {
           </section>
         )}
 
-        <footer className="mt-10 pt-4 text-center text-xs text-muted-foreground">
-          Made with love · A fresh quote every day
-        </footer>
       </div>
+      <SiteFooter />
     </div>
   );
 }
