@@ -28,6 +28,9 @@ const CATEGORY_IMAGES: Record<Category, string> = {
   "Fitness": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=70",
   "Life": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=70",
   "Happiness": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1400&q=70",
+  "Sad": "https://images.unsplash.com/photo-1495616811223-4d98c6e9d869?auto=format&fit=crop&w=1400&q=70",
+  "Love": "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?auto=format&fit=crop&w=1400&q=70",
+  "Emotions": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1400&q=70",
 };
 
 function Index() {
